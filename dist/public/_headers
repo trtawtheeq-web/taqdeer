@@ -1,0 +1,6 @@
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/original/*
+  Cache-Control: public, max-age=0, must-revalidate
+/api/platform/config.js
+  Cache-Control: public, max-age=0, must-revalidate

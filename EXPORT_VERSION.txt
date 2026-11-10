@@ -1,0 +1,5 @@
+Source commit: 7dbee863aa7713af5756f0689a5b049f4a1f5c2e
+Export date: 2026-11-09
+Portable static deployment target: Netlify
+Source and full local public assets included.
+No credentials, .env, browser sessions, node_modules or Git database included.

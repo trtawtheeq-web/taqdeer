@@ -1,0 +1,247 @@
+#localPaymentSummary {
+  --local-payment-summary-blue: #237aba;
+  --local-payment-summary-ink: #262626;
+  --local-payment-summary-muted: #6d6d6d;
+  --local-payment-summary-surface: #f7f7f7;
+  --local-payment-summary-border: rgba(35, 122, 186, 0.18);
+  color: var(--local-payment-summary-ink);
+  font-family: "Readex Pro", sans-serif;
+}
+
+#localPaymentSummary[hidden] {
+  display: none !important;
+}
+
+#localPaymentSummary .local-payment-summary__container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#localPaymentSummary .local-payment-summary__title {
+  color: var(--local-payment-summary-blue) !important;
+  outline: none;
+}
+
+#localPaymentSummary .local-payment-summary__title:focus-visible {
+  outline: 3px solid rgba(35, 122, 186, 0.38);
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+
+#localPaymentSummary .local-payment-summary__notice {
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1rem;
+  color: var(--local-payment-summary-blue);
+  background: rgba(35, 122, 186, 0.08);
+  border: 1px solid var(--local-payment-summary-border);
+  border-radius: 12px;
+}
+
+#localPaymentSummary .local-payment-summary__cards {
+  display: grid;
+  gap: 1rem;
+}
+
+#localPaymentSummary .gen-info-card.local-payment-summary__card,
+#localPaymentSummary .gen-info-card.local-payment-summary__empty {
+  padding: 1.25rem;
+  background: var(--local-payment-summary-surface);
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
+
+#localPaymentSummary .local-payment-summary__card-title {
+  margin-top: 0;
+  color: var(--local-payment-summary-blue);
+}
+
+#localPaymentSummary .local-payment-summary__fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+}
+
+#localPaymentSummary .local-payment-summary__item {
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+#localPaymentSummary .local-payment-summary__info-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-inline-end: 0.75rem;
+  padding: 0.6rem;
+  background: rgba(35, 122, 186, 0.1);
+  border-radius: 50%;
+}
+
+#localPaymentSummary .local-payment-summary__note-icon {
+  width: 22px;
+  height: 22px;
+}
+
+#localPaymentSummary .local-payment-summary__item-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#localPaymentSummary .local-payment-summary__item-label {
+  margin: 0;
+  color: var(--local-payment-summary-blue) !important;
+}
+
+#localPaymentSummary .local-payment-summary__item-value {
+  overflow-wrap: anywhere;
+  color: var(--local-payment-summary-ink) !important;
+}
+
+#localPaymentSummary .local-payment-summary__empty {
+  color: var(--local-payment-summary-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+#localPaymentSummary .local-payment-summary__fee-rows {
+  display: grid;
+  gap: 0;
+}
+
+#localPaymentSummary .local-payment-summary__fee-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--local-payment-summary-border);
+}
+
+#localPaymentSummary .local-payment-summary__fee-row:first-child {
+  padding-top: 0;
+}
+
+#localPaymentSummary .local-payment-summary__fee-row--total {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+#localPaymentSummary .local-payment-summary__fee-label {
+  color: var(--local-payment-summary-muted);
+  line-height: 1.6;
+}
+
+#localPaymentSummary .local-payment-summary__fee-row--total .local-payment-summary__fee-label,
+#localPaymentSummary .local-payment-summary__fee-row--total .local-payment-summary__fee-value {
+  color: var(--local-payment-summary-blue);
+  font-weight: 700;
+}
+
+#localPaymentSummary .local-payment-summary__fee-value {
+  flex: 0 0 auto;
+  color: var(--local-payment-summary-blue);
+  font-weight: 600;
+  text-align: end;
+}
+
+#localPaymentSummary .local-payment-summary__fee-unknown {
+  color: var(--local-payment-summary-muted);
+  font-weight: 400;
+}
+
+#localPaymentSummary .local-payment-summary__currency-amount {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  direction: ltr;
+  white-space: nowrap;
+}
+
+#localPaymentSummary .local-payment-summary__amount-number {
+  font-variant-numeric: tabular-nums;
+}
+
+#localPaymentSummary .local-payment-summary__currency-label {
+  font-size: 0.9em;
+}
+
+#localPaymentSummary .local-payment-summary__currency-icon {
+  width: 18px;
+  height: 18px;
+}
+
+#localPaymentSummary .local-payment-summary__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+#localPaymentSummary .local-payment-summary__controls button {
+  min-height: 46px;
+}
+
+#localPaymentSummary .local-payment-summary__disabled-button,
+#localPaymentSummary .local-payment-summary__disabled-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+body.dark-mode #localPaymentSummary {
+  --local-payment-summary-ink: #ffffff;
+  --local-payment-summary-muted: #c3c3c3;
+  --local-payment-summary-surface: #151515;
+  --local-payment-summary-border: rgba(139, 190, 231, 0.28);
+}
+
+body.dark-mode #localPaymentSummary .gen-info-card.local-payment-summary__card,
+body.dark-mode #localPaymentSummary .gen-info-card.local-payment-summary__empty {
+  border-color: var(--local-payment-summary-border);
+}
+
+body.dark-mode #localPaymentSummary .local-payment-summary__item-value {
+  color: var(--local-payment-summary-ink) !important;
+}
+
+@media (max-width: 991px) {
+  #localPaymentSummary .local-payment-summary__fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  #localPaymentSummary .local-payment-summary__container {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  #localPaymentSummary .local-payment-summary__fields {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  #localPaymentSummary .local-payment-summary__fee-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  #localPaymentSummary .local-payment-summary__fee-value {
+    text-align: start;
+  }
+
+  #localPaymentSummary .local-payment-summary__controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  #localPaymentSummary .local-payment-summary__controls button {
+    width: 100%;
+  }
+}

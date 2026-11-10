@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "تقدير - تقدير ولا أسهل | Taqdeer"
+    },
+    {
+      "path": "/booking-appointment",
+      "title": "حجز موعد جديد"
+    },
+    {
+      "path": "/managebooking",
+      "title": "إدارة الحجوزات"
+    },
+    {
+      "path": "/checkreportstatus",
+      "title": "الاستعلام عن تقرير الأضرار"
+    },
+    {
+      "path": "/objections",
+      "title": "الاعتراضات"
+    },
+    {
+      "path": "/raise-objection",
+      "title": "تقديم الاعتراض"
+    },
+    {
+      "path": "/about",
+      "title": "حول تقدير"
+    },
+    {
+      "path": "/privacy-policy",
+      "title": "سياسة الخصوصية"
+    },
+    {
+      "path": "/terms-of-use",
+      "title": "شروط الاستخدام"
+    },
+    {
+      "path": "/vehicle-damage-assessment-center-services",
+      "title": "خدمات تقدير الأضرار"
+    },
+    {
+      "path": "/damage-assessment-services-for-rental-services",
+      "title": "خدمات تقدير الأضرار غير المرورية لمكاتب التأجير"
+    },
+    {
+      "path": "/en",
+      "title": "Home | Taqdeer"
+    },
+    {
+      "path": "/en/booking-appointment",
+      "title": "Book a New Appointment"
+    },
+    {
+      "path": "/en/managebooking",
+      "title": "Manage Bookings"
+    },
+    {
+      "path": "/en/checkreportstatus",
+      "title": "Inquiry about the Damage Report"
+    },
+    {
+      "path": "/en/objections",
+      "title": "Objections"
+    },
+    {
+      "path": "/en/raise-objection",
+      "title": "Raise an Objection"
+    },
+    {
+      "path": "/en/about",
+      "title": "About Taqdeer"
+    },
+    {
+      "path": "/en/privacy-policy",
+      "title": "Privacy Policy"
+    },
+    {
+      "path": "/en/terms-of-use",
+      "title": "Terms of Use"
+    },
+    {
+      "path": "/en/vehicle-damage-assessment-center-services",
+      "title": "Damage Assessment Services"
+    },
+    {
+      "path": "/en/damage-assessment-services-for-rental-services",
+      "title": "Non-Traffic Damage Assessment Services for Rental Offices"
+    },
+    {
+      "path": "/payment-summary",
+      "title": "ملخص الدفع"
+    },
+    {
+      "path": "/en/payment-summary",
+      "title": "Payment summary"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+(() => {
+  "use strict";
+  const sourceLabels = {"ar": {"chooseItem": "اختيار", "noCityFound": "لم يتم العثور على مدينة", "noCentersFound": "لم يتم العثور على مراكز", "searchPlaceholder": "Search Country", "confirmBookingButton": "تأكيد الحجز", "nextButton": "التالي", "_requiredMessage": " هذا الحقل مطلوب ", "invalidPhoneMessage": "Mobile Number is Invalid", "requiredMessage": " هذا الحقل مطلوب ", "validFieldMessage": "يرجى إدخال بيانات صحيحة.", "noSlotSelected": " الرجاء اختيار وقت لتتمكن من المتابعة", "noSlotAvailableText": "لا توجد أماكن متاحة لهذا التاريخ."}, "en": {"chooseItem": "choose", "noCityFound": "No city found", "noCentersFound": "No centers found", "searchPlaceholder": "Search Country", "confirmBookingButton": "Confirm appointment", "nextButton": "Next", "_requiredMessage": "This field is required", "invalidPhoneMessage": "Mobile Number is Invalid", "requiredMessage": "This field is required", "validFieldMessage": "Please enter valid input.", "noSlotSelected": "Please select a time slot before proceeding.", "noSlotAvailableText": "No slots available for this date."}};
+  const culture = document.getElementById("currentLanguage")?.value || document.documentElement.lang;
+  Object.assign(window, sourceLabels[/^ar/i.test(culture) ? "ar" : "en"]);
+})();

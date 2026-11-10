@@ -1,0 +1,752 @@
+<!doctype html>
+
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Manage Booking | Taqdeer</title>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+<meta content="" name="google-site-verification"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+
+
+
+<link href="/media/ytmhwynh/logo.svg" rel="icon" type="image/x-icon"/>
+<link href="/build/css/font.css" rel="stylesheet"/>
+<link href="/build/css/twa.css" rel="stylesheet"/>
+<link href="/build/css/twa.css?v=82XDvkfc5R43Akwl99D8pI_3Zq0vpgtrjAZ3rFvL4KA" rel="stylesheet"/>
+<link href="/build/css/all.css" rel="stylesheet"/>
+<link href="/build/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="/build/css/twa.css?v=82XDvkfc5R43Akwl99D8pI_3Zq0vpgtrjAZ3rFvL4KA" rel="stylesheet"/>
+<link href="/build/css/twa-dark.css?v=MnV1hffhxIe7Axh4tSg3L7koxpU7xx_Of6LlmJB3AU4" rel="stylesheet"/>
+
+
+
+
+<meta content="noindex,nofollow" name="robots"/><meta content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; connect-src 'none'; form-action 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:;" http-equiv="Content-Security-Policy"/></head>
+<html lang="en-US">
+<body class="light-mode d-flex flex-column vh-100" data-source-page="en/managebooking" dir="ltr">
+<input id="currentLanguage" type="hidden" value="en-US"/>
+
+<div id="loader" style="display: none;">
+<div class="loader-container">
+<div class="spinner"></div>
+<p class="loading-text">Please wait...</p>
+</div>
+</div>
+<div class="nav-section position-relative bg-grey top-0 start-0 w-100 z-3">
+<div class="container">
+<nav class="navbar navbar-expand-xl bg-transparent">
+<div class="container-fluid px-0">
+<a class="navbar-brand order-1" href="/en" target="_parent">
+<img alt="Logo" class="no-rotate ltr-img svg-white" src="/media/ytmhwynh/logo.svg"/>
+</a>
+<div class="d-flex align-items-center order-2">
+<a class="d-flex align-items-center lang-switch d-xl-none fc-dark-blue revers-col text-decoration-none" href="/" target="_parent">
+<img alt="globe-icon" class="me-1 global-icon svg-white" src="/assets/icons/global.svg"/>
+العربية                          
+                        </a>
+<button aria-controls="mobileNav" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mobileNav" data-bs-toggle="offcanvas" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse order-3 d-none d-xl-flex" id="navbarScroll">
+<ul class="navbar-nav me-auto my-2 my-lg-0 align-items-start align-items-xl-center">
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                                                    About Us
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/about" target="_parent">About Taqdeer</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/media/2xfdmyyw/regulatory-rules.pdf" rel="noopener noreferrer" target="_blank">Regulatory Rules for Vehicle Damage Assessment</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/media/ilcjmlsr/professional-standards.pdf" rel="noopener noreferrer" target="_blank">Standards of Professional Practice for Vehicle Damage Assessment</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<img alt="seperator-dot" class="d-xl-block d-none svg-white" src="/assets/icons/seprator-dot.svg"/>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#damageAssessmentCenters" role="button">
+                                                    Damage assessments Centers
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/damage-assessment-services-for-rental-services" target="_parent">Non-Traffic Damage Assessment Services for Rental Offices</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/vehicle-damage-assessment-center-services" target="_parent">Damage Assessment Services</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<img alt="seperator-dot" class="d-xl-block d-none svg-white" src="/assets/icons/seprator-dot.svg"/>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#eServices" role="button">
+                                                    E-Services
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/booking-appointment" target="_parent">Book appointment</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/managebooking" target="_parent">Modify appointment</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<img alt="seperator-dot" class="d-xl-block d-none svg-white" src="/assets/icons/seprator-dot.svg"/>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                                                    Help &amp; Support
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/checkreportstatus" target="_parent">Inquiry about the Damage Report</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/objections" target="_parent">Objections</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" data-bs-target="#Inquiry-about-objections" data-bs-toggle="modal" href="?modal=Inquiry-about-objections">Inquiry about Objection</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class="d-flex flex-column gap-4 gap-xl-0 flex-xl-row nav-right-list mt-3 mt-xl-0">
+<div class="icon-text-section d-flex align-items-center me-3 fc-dark-blue">
+<img alt="call-icon" class="me-1 ltr-img svg-white" src="/assets/icons/call-calling.svg"/>
+                                    920000460
+                                </div>
+<a class="icon-text-section d-xl-flex align-items-center me-3 fc-dark-blue d-none text-decoration-none" href="/" target="_parent">
+<img alt="globe-icon" class="me-1 svg-white" src="/assets/icons/global.svg"/>
+                                العربية
+                            </a>
+<div class="circle-icon" data-bs-target="#Search-Content-modal" data-bs-toggle="modal">
+<img alt="search-icon" class="ltr-img svg-white" src="/assets/icons/search-normal.svg"/>
+</div>
+<div class="circle-icon ms-2">
+<img alt="moon-icon" class="light-img svg-white ltr-img" src="/assets/icons/moon.svg"/>
+<img alt="sun-icon" class="dark-img svg-white" src="/assets/icons/sun-dark.svg"/>
+</div>
+</div>
+</div>
+
+<div aria-labelledby="mobileNavLabel" class="offcanvas offcanvas-start d-xl-none" id="mobileNav" tabindex="-1">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title" id="mobileNavLabel">Main Menu
+</h5>
+<button aria-label="Close" class="btn-close-custom" data-bs-dismiss="offcanvas" type="button">
+<img alt="close-circle" class="svg-white" src="/assets/images/close-circle.svg"/>
+</button>
+</div>
+<div class="offcanvas-body">
+<ul class="navbar-nav me-auto my-2 my-lg-0 align-items-start align-items-xl-center">
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                                                            About Us
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/about" target="_parent">About Taqdeer</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/media/2xfdmyyw/regulatory-rules.pdf" rel="noopener noreferrer" target="_blank">Regulatory Rules for Vehicle Damage Assessment</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/media/ilcjmlsr/professional-standards.pdf" rel="noopener noreferrer" target="_blank">Standards of Professional Practice for Vehicle Damage Assessment</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<img alt="seperator-dot" class="d-xl-block d-none svg-white" src="/assets/icons/seprator-dot.svg"/>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#damageAssessmentCenters" role="button">
+                                                            Damage assessments Centers
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/damage-assessment-services-for-rental-services" target="_parent">Non-Traffic Damage Assessment Services for Rental Offices</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/vehicle-damage-assessment-center-services" target="_parent">Damage Assessment Services</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<img alt="seperator-dot" class="d-xl-block d-none svg-white" src="/assets/icons/seprator-dot.svg"/>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#eServices" role="button">
+                                                            E-Services
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/booking-appointment" target="_parent">Book appointment</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/managebooking" target="_parent">Modify appointment</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<img alt="seperator-dot" class="d-xl-block d-none svg-white" src="/assets/icons/seprator-dot.svg"/>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                                                            Help &amp; Support
+                                                                <img alt="arrow" class="ms-1 dropdown-arrow mb-1 svg-white" src="/assets/icons/arrow-circle-down.svg"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/checkreportstatus" target="_parent">Inquiry about the Damage Report</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" href="/en/objections" target="_parent">Objections</a>
+</li>
+<li>
+<a class="dropdown-item custom-nav-link" data-bs-target="#Inquiry-about-objections" data-bs-toggle="modal" href="?modal=Inquiry-about-objections">Inquiry about Objection</a>
+</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<div class="d-flex justify-content-between">
+<div class="icon-text-section d-flex align-items-center me-3 fc-dark-blue">
+<img alt="call-icon" class="me-1 ltr-img svg-white" src="/assets/icons/call-calling.svg"/>
+                                            920000460
+                                        </div>
+<div class="d-flex col-gap-10">
+<div class="circle-icon" data-bs-target="#Search-Content-modal" data-bs-toggle="modal">
+<img alt="search-icon" class="ltr-img svg-white" src="/assets/icons/search-normal.svg"/>
+</div>
+<div class="circle-icon">
+<img alt="moon-icon" class="light-img svg-white ltr-img" src="/assets/icons/moon.svg"/>
+<img alt="sun-icon" class="dark-img svg-white" src="/assets/icons/sun-dark.svg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="Inquiry-about-objectionsLabel-1" class="modal modal-lg fade br-52 Inquiry-about-objections" id="Inquiry-about-objections" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered justify-content-center">
+<div class="modal-content br-52 p-74-73">
+<div class="modal-header px-0 pt-0">
+<h1 class="modal-title fs-28 fw-bold text-primary" id="Inquiry-about-objectionsLabel">Inquiry about Objection
+</h1>
+<button aria-label="Close" class="btn-close-custom inquiry-objection-close" data-bs-dismiss="modal" type="button">
+<img alt="close-circle" class="svg-white" src="/assets/images/close-circle.svg"/>
+</button>
+</div>
+<div class="modal-body px-0">
+<div id="errorMessageCommon" style="color: red; display: none;"></div>
+<div class="mb-4">
+<label class="form-label required-asterisk" for="nameInput">Request Number</label>
+<input class="form-control custom-input" id="requestNum" placeholder="insert request number" type="text"/>
+</div>
+<div class="mb-4">
+<label class="form-label required-asterisk" for="nameInput">Damage Assessment Number</label>
+<input class="form-control custom-input" id="assessmentNum" placeholder="insert damage assessment number" type="text"/>
+</div>
+</div>
+<div class="modal-footer p-0 pt-4">
+<a class="btn btn-stroke-large fw-162 inquiry-objection-close w-100-454 order-2 order-454-1" data-bs-dismiss="modal" type="button">
+<img alt="close-iconn" class="svg-white" src="/assets/icons/close-circle.svg"/>
+                        Close
+                    </a>
+<a class="btn btn-primary-large btn-primary fw-162 w-100-454 order-1 order-454-2" href="#" id="viewRequestedDetails" type="button">
+                        Next
+                        <img alt="arrow-next" class="" src="/assets/icons/arrow-next.svg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="Inquiry-about-objectionsLabel-2" class="modal modal-lg fade br-52 Inquiry-about-objections" id="Inquiry-about-objections-other" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered justify-content-center">
+<div class="modal-content br-52 p-74-73">
+<div class="modal-header px-0 pt-0">
+<h1 class="modal-title fs-28 fw-bold text-primary" id="Inquiry-about-objectionsLabel">Inquiry about Objection
+</h1>
+<button aria-label="Close" class="btn-close-custom inquiry-objection-close" data-bs-dismiss="modal" type="button">
+<img alt="close-circle" class="svg-white" src="/assets/images/close-circle.svg"/>
+</button>
+</div>
+<div class="modal-body px-0">
+<div class="mb-4">
+<label class="form-label" for="nameInput">Request Number</label>
+<input class="form-control custom-input" id="requestNo" placeholder="insert request number" type="text"/>
+<div id="errorMessage" style="color: red; display: none;"></div>
+</div>
+</div>
+<div class="modal-footer p-0 pt-4">
+<a class="btn btn-stroke-large fw-162 inquiry-objection-close" data-bs-dismiss="modal" type="button">
+<img alt="close-iconn" class="svg-white" src="/assets/icons/close-circle.svg"/>
+              Close
+            </a>
+<a class="btn btn-primary-large btn-primary fw-162" href="#" id="requestDetails" type="button">
+            Next  
+            <img alt="arrow-next" class="svg-white" src="/assets/icons/arrow-next.svg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="Search-Content-modal-Label" class="modal modal-lg fade br-52 Inquiry-about-objections" id="Search-Content-modal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered justify-content-center">
+<div class="modal-content br-52 p-74-73">
+<div class="modal-header px-0 pt-0">
+<h1 class="modal-title fs-28 fw-bold text-primary" id="Inquiry-about-objectionsLabel">Search
+</h1>
+<button aria-label="Close" class="btn-close-custom inquiry-objection-close" data-bs-dismiss="modal" type="button">
+<img alt="close-circle" class="svg-white" src="/assets/images/close-circle.svg"/>
+</button>
+</div>
+<form>
+<div class="modal-body px-0">
+<div class="mb-4">
+<input class="form-control custom-input" id="searchTerm" name="q" placeholder="search here" type="text"/>
+</div>
+</div>
+<div class="modal-footer p-0 pt-4">
+<a class="btn btn-stroke-large fw-162 inquiry-objection-close w-100-454 order-2 order-454-1" data-bs-dismiss="modal" type="button">
+<img alt="close-iconn" class="svg-white" src="/assets/icons/close-circle.svg"/>
+              Close
+            </a>
+<button class="btn btn-primary-large btn-primary fw-162 w-100-454 order-1 order-454-2" id="searchQueryButton">
+<img alt="arrow-next" class="ltr-img svg-white" src="/assets/icons/search-normal-white.svg"/>
+            Search  
+            </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="invisible-turnstile-container" style="display:flex;justify-content:flex-end;margin:0 10px 0  10px;min-height:70px;min-width:300px;"> </div>
+<div class="heading-bread-crumb bg-grey">
+<div class="container">
+<h2 class="fs-32 fs-md-20 fw-bold mb-1">Booking Management</h2>
+<nav aria-label="breadcrumb" style="
+           --bs-breadcrumb-divider: url('/assets/icons/arrow-left-breadcrumbs.svg');">
+<ol class="breadcrumb mb-0">
+<li class="breadcrumb-item fs-12 fw-regular">
+<a href="/en" target="_parent">Home</a>
+</li>
+<li aria-current="page" class="breadcrumb-item fs-12 fw-regular active">
+					Booking Management
+				</li>
+</ol>
+</nav>
+</div>
+</div>
+
+
+<form id="manageWizardForm" novalidate="">
+<section class="page-content">
+<div class="container">
+<div class="alert alert-danger d-none mt-4" id="apiError" role="alert"></div>
+<div id="wizard-steps">
+<div class="wizard-step" id="step1" style="display:none;">
+
+<section class="page-content">
+
+<div class="update-appointment">
+<h3 class="fs-28 fw-bold fs-md-16 py-78-41">
+			Please complete the fields below to view and edit your reservation
+		</h3>
+<div class="purpose-accessment d-block d-md-flex justify-content-center align-items-center">
+<p class="mb-0 fs-16 fw-bold text-light me-3 fs-md-12">
+				 Check the reservation using
+			</p>
+<div class="nav nav-pills nav-fill col-gap-20" role="tablist">
+<label class="nav-link fs-16 fw-160 active w-100-390 fs-md-12">
+<input checked="" class="d-none" name="bookingSearch" type="radio" value="2"/>
+					Booking Number
+				</label>
+<label class="nav-link fs-16 fw-160 w-100-390 fs-md-12">
+<input class="d-none" name="bookingSearch" type="radio" value="1"/>
+					Accident Number
+				</label>
+</div>
+</div>
+<div class="form-fields">
+<div class="row">
+<div class="col-md-6">
+
+<div class="mb-4 mb-md-0">
+<label class="form-label required-asterisk" for="dynamicInput" id="dynamicLabel">Booking Number</label>
+<input class="form-control custom-input custom-validate" data-pattern="^[A-Za-z0-9]{1,30}$" data-required="true" id="dynamicInput" maxlength="30" name="bookingNumber" placeholder="Insert booking number" type="text"/>
+<span class="text-danger formErrorMessage"></span>
+</div>
+</div>
+<div class="col-md-6">
+
+<div class="mb-4 mob-new-input">
+<label class="form-label required-asterisk w-100" for="nameInput">Mobile Number</label>
+<input class="form-control custom-input w-100 pl-10" data-error-message="Mobile Number is Invalid" data-required="true" id="mobileNumber" inputmode="numeric" maxlength="15" name="mobile" pattern="[0-9]{1,15}" placeholder="Mobile Number" type="tel"/>
+<span class="text-danger formErrorMessage" id="phoneError"></span>
+<input id="mgmobilenumber" name="bkmobilenumber" type="hidden" value=""/>
+<input id="mgcountrycode" name="bkcountrycode" type="hidden" value=""/>
+</div>
+</div>
+</div>
+</div>
+<div class="btn-grp d-flex justify-content-end mb-5">
+<a class="btn btn-stroke-large fw-162 me-3" href="/en" id="btnBack" target="_parent">
+<img alt="back-iconn" class="svg-white" src="/assets/icons/back.svg"/>
+				back
+			</a>
+<a class="btn btn-primary-large btn-primary fw-162" id="btnShowBooking" type="button">
+				Show Booking
+				<img alt="arrow-next" class="" src="/assets/icons/arrow-next.svg"/>
+</a>
+</div>
+<input id="referenceTypeId" name="referenceTypeId" type="hidden"/>
+<input id="referenceNumber" name="referenceNumber" type="hidden"/>
+</div>
+
+</section>
+
+</div>
+<div class="wizard-step" id="step2" style="display:none;">
+
+
+<section class="page-content">
+<div class="container">
+<div class="modify-cards-section">
+<div class="modify-card d-block d-md-flex mt-3">
+<img alt="~/assets/icons/document-text.svg" class="grey-card-img svg-white" src="/assets/icons/document-text.svg"/>
+<div class="content-grey-card row-gap-10">
+<div class="d-flex flex-column row-gap-15 mw-1158 mt-3 mt-md-0">
+<div class="d-flex align-items-center col-gap-10 row-gap-10 flex-wrap">
+<p class="mb-0 fs-16 fw-500">
+								Booking Number<span class="text-primary fw-bold ms-2"><span id="viewBookingNumber"></span></span>
+</p>
+<div class="blue-date-tag">
+<p class="mb-0">Date</p>
+<p class="mb-0 text-primary"><span id="viewAppointmentDate"></span></p>
+</div>
+<div class="blue-time-tag">
+<p class="mb-0">Time</p>
+<p class="mb-0 text-primary"><span id="viewAppointmentTime"></span></p>
+</div>
+</div>
+<div class="d-block d-sm-flex align-items-center col-gap-10 row-gap-5p flex-wrap">
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Purpose of the assessment <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewPurpose"></span></span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Name <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewFullname"></span></span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Country Code<br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewCountryCode"></span> </span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Mobile Number<br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewMobileNumber"></span> </span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								City <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewCity"></span></span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Accident Number <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewAccidentNumber"></span></span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Region <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewRegion"></span></span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Plate Number <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewPlateNumber"></span></span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Vehicle Type <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewCenterType"></span></span>
+</p>
+<svg class="d-none d-sm-block" fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+<circle cx="4" cy="4" fill="#555559" fill-opacity="0.6" r="4"></circle>
+</svg>
+<p class="mb-0 mb-7p fs-14 fw-regular">
+								Center Name <br class="d-none br-d-block"/><span class="text-primary ms-11"><span id="viewCenterName"></span></span>
+</p>
+</div>
+</div>
+<a class="btn btn-primary btn-48-waiting" id="btnModifyBooking"><img alt="edit-white" class="svg-white" src="/assets/icons/edit-white.svg"/>Modify Booking</a>
+</div>
+</div>
+</div>
+
+</div>
+<input id="selectedBranchId" name="selectedBranchId" type="hidden"/>
+<input id="sourceId" name="sourceId" type="hidden"/>
+<input id="regionId" name="regionId" type="hidden"/>
+<input id="dayIDs" name="dayIDs" type="hidden"/>
+<input id="hdnpurposeAssesmetId" name="hdnpurposeAssesmetId" type="hidden"/>
+</section>
+
+</div>
+<div class="wizard-step" id="step3" style="display:none;">
+
+<h3 class="fs-28 fw-bold mb-4 fs-md-16">
+	Please select the date and time for the appointment that you prefer
+</h3>
+<p class="fs-20 fs-md-16 fw-500 text-primary">Choose Date</p>
+<div class="date-section d-flex flex-wrap gap-2 mb-4" id="date-list">
+</div>
+<div class="available-time-slots">
+<div id="showAvailableSlots">
+<p class="fs-20 fs-md-16 fw-500 text-primary text-start my-3">
+			Choose the time
+		</p>
+<div class="time-section d-flex flex-wrap gap-2 mb-4" id="slot-selector">
+
+</div>
+</div>
+<div class="not-available-time-slots d-none" id="noSlotsMessage">
+<img alt="no-time-av" class="svg-white" src="/assets/icons/no-time-av.svg"/>
+<h2 class="text-black fs-28 fw-bold mt-4">Sorry, there are no available time slots for today.</h2>
+</div>
+</div>
+<div id="chooseAppointmentButtonControl" style="display:none;">
+<div class="btn-grp d-flex justify-content-end mt-5">
+<a class="btn btn-stroke-large fw-162 me-3" data-bs-dismiss="modal" id="btnBackBooking" type="button">
+<img alt="back-iconn" class="svg-white" src="/assets/icons/back.svg"/>
+			back
+		</a>
+<button class="btn btn-primary-large btn-primary fw-162" id="btnChooseAppointment">
+			Next  <img alt="arrow-next" class="svg-white" src="/assets/icons/arrow-next.svg"/>
+</button>
+</div>
+</div>
+<input id="selectedDate" name="selectedDate" type="hidden"/>
+<input id="selectedTime" name="selectedTime" type="hidden"/>
+<input id="selectedEndTime" name="selectedEndTime" type="hidden"/>
+<input id="selectedSlotId" name="selectedSlotId" type="hidden"/>
+
+</div>
+<div class="wizard-step" id="step4" style="display:none;">
+
+<section class="page-content">
+<div class="container">
+<div class="verification-code-section">
+<div class="row">
+<div class="col-lg-7 col-md-6">
+<h2 class="fs-48 fs-md-32 fw-medium text-primary">
+                        Verification Code
+                    </h2>
+<p class="fs-20 fs-md-16 fw-regular text-light">
+                        Please enter the verification code sent to the mobile number
+ending with
+                        <span id="maskMobileId"></span>
+</p>
+<p class="text-danger fs-16 fs-md-12 fw-regular">
+<span id="tokenTimer"></span>
+</p>
+<div class="d-flex justify-content-start mb-4 otp-input-grp ltr-code">
+<input class="form-control otp-input digitonly me-2 text-center ltr-code" id="otpBox-0" inputmode="numeric" maxlength="1" pattern="[0-9]" required="" type="text"/>
+<input class="form-control otp-input digitonly me-2 text-center ltr-code" id="otpBox-1" inputmode="numeric" maxlength="1" pattern="[0-9]" required="" type="text"/>
+<input class="form-control otp-input digitonly me-2 text-center ltr-code" id="otpBox-2" inputmode="numeric" maxlength="1" pattern="[0-9]" required="" type="text"/>
+<input class="form-control otp-input digitonly me-2 text-center ltr-code" id="otpBox-3" inputmode="numeric" maxlength="1" pattern="[0-9]" required="" type="text"/>
+</div>
+<div class="mt-3 text-primary d-flex align-items-center p-67 d-none" id="resendOtpSection">
+<a class="text-decoration-none text-primary" href="#" id="resendOtpLink" type="button">
+<img alt="recovery-convert" class="me-2" src="/assets/icons/recovery-convert.svg"/>
+                            Send code again
+                        </a>
+</div>
+<div class="btn-grp d-block d-sm-flex justify-content-start mt-5">
+<button class="btn btn-stroke-large fw-162 me-0 me-sm-3 mb-3 mb-sm-auto w-100 w-sm-auto" data-bs-dismiss="modal" id="btnPrevious" type="button">
+<img alt="back-iconn" class="svg-white" src="/assets/icons/back.svg"/>
+                            back
+                        </button>
+<button class="btn btn-primary-large btn-primary fw-168 w-100 w-sm-auto" id="sendAppointmentBtn" type="button">
+                            Send Code
+                            <img alt="arrow-next" src="/assets/icons/arrow-next.svg"/>
+</button>
+</div>
+<div class="" id="otpMessage"></div>
+</div>
+<div class="col-lg-5 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
+<img alt="verification-code-vector" class="img-fluid d-none d-md-block" src="/assets/images/verification-code-vector.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<style>
+    .otp-input.is-invalid {
+        border: 2px solid #dc3545 !important; /* Bootstrap's red color */
+        border-radius: 8px; /* Optional: keep corners rounded like your design */
+        background-image: none !important; /* Ensures no icon appears */
+        background-color: #fff; /* Keep the white background */
+    }
+</style>
+
+
+</div>
+<div class="wizard-step" id="step5" style="display:none;">
+
+<section class="page-content">
+<div class="container">
+<hr style="color: #c9c9c9"/>
+<div class="booking-successfull">
+<div class="d-flex justify-content-center align-items-center flex-column text-center">
+<div class="gif ltr-img">
+<img alt="thankyou-appointment-success" class="no-rotate" src="/assets/gifs/thankyou-appointment-success.gif" style="height: 134px; width: 134px"/>
+</div>
+<div class="thank-msg fs-32 fs-md-20 fw-bold text-primary">
+Thank you <br/> your booking has been successfully updated                </div>
+<div class="d-block d-md-flex col-gap-34 mb-3 mt-3">
+<div class="grey-btn fw-md-260 fw-335 mt-3 mt-md-0">
+<p class="fs-16 fs-md-12 fw-regular text-primary mb-0">
+                                Date
+                            </p>
+<p class="fs-16 fs-md-12 fw-regular text-grey ms-2 mb-0">
+<span id="appointmentDate"></span>
+</p>
+</div>
+<div class="grey-btn fw-md-260 fw-335">
+<p class="fs-16 fs-md-12 fw-regular text-primary mb-0">
+                                Request Number
+                            </p>
+<p class="fs-16 fs-md-12 fw-regular text-grey ms-2 mb-0">
+<span id="reqNumber"></span>
+</p>
+</div>
+</div>
+<div class="btn-grp d-block-454 d-flex justify-content-center mt-5">
+<a class="btn btn-primary-large btn-primary fw-162 mt-10-454 w-100-454" href="/en" target="_parent" type="button">
+<img alt="home-icon" src="/assets/icons/home-2-white.svg"/>
+                        Home Page
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+<div class="wizard-step" id="step6" style="display:none;">
+
+<section class="page-content">
+<div class="container">
+<div class="booking-successfull">
+<div class="d-flex justify-content-center align-items-center flex-column text-center">
+<div class="gif">
+<img alt="sorry-img" class="img-fluid ltr-img" src="/assets/images/sorry.svg"/>
+</div>
+<div class="thank-msg fs-32 fs-md-20 fw-bold text-primary">
+                    Sorry, there is no reservation found
+                </div>
+<div class="btn-grp d-block-454 d-flex justify-content-center mt-4">
+<a class="btn btn-primary-large btn-primary px-4 mt-10-454 w-100-454" id="btnSearchIcon" type="button">
+<img alt="search-icon" class="svg-white ltr-img" src="/assets/icons/search-normal-white.svg"/>
+                        Search again
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</div>
+</section>
+</form>
+
+<footer class="footer mt-auto mt-5">
+<div class="container">
+<div class="row gy-4 align-items-start justify-content-between">
+<div class="col-lg-6">
+<div class="d-flex align-items-center gap-3 mb-3">
+<img alt="Taqdeer Logo" class="ltr-img" src="/media/xy2dbina/taqdeer-logo.svg"/>
+<div class="vr opacity-100"></div>
+<img alt="Taqeem 1" class="ltr-img" src="/media/ou4hn4zi/taqeem-1.svg"/>
+</div>
+<p class="mb-2 fs-16 fw-500">Under the supervision of the Saudi Authority for Accredited Valuers
+</p>
+<a href="https://x.com/taqdeer_sa?t=e0-2zbeNfq8b_zwYMt23uQ&amp;s=08" rel="noopener noreferrer" target="_blank">
+<img alt="X icon" class="svg-white" src="/assets/icons/twitter.svg" width="20"/>
+</a>
+</div>
+<div class="col-lg-6">
+<h6 class="fs-16 fw-500 mb-3 text-start">Related Links
+</h6>
+<img alt="" class="d-flex slign-items-start mb-3 svg-white" src="/assets/icons/Group 28974496.svg"/>
+<ul class="list-unstyled related-links d-block d-md-flex flex-wrap justify-content-between">
+<li class="mb-2 fs-12 fw-500">
+<a href="https://www.taqeem.gov.sa" rel="noopener noreferrer" target="_blank">
+<img alt="arrow" class="me-2 svg-white" src="/assets/icons/arrow-circle-down-footer.svg"/>Saudi Authority for Accredited Valuers
+                                    </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="divider"></div>
+<div class="d-flex justify-content-between fs-12 fw-500 mx-3 flex-wrap">
+<a class="order-1" href="/en/privacy-policy" target="_parent">Privacy Policy</a>
+<p class="mb-0 mx-auto mx-sm-0 order-3 order-sm-2 mt-3 mt-sm-0">All rights reserved © Taqdeer 2026
+</p>
+<a class="order-2 order-sm-3" href="/en/terms-of-use" target="_parent">Terms of Use</a>
+</div>
+</div>
+</footer>
+<script defer="" src="/original/ui.js?v=84600bf09d28b9c2"></script><script defer="" src="/original/centers.js?v=49515c83e674b7fa"></script><script data-booking-src="/original/booking-data.js?v=369924dd59d6a98a" defer="" src="/original/forms.js?v=05faa0984a374ca4"></script></body>
+
+<script defer="" src="/build/js/bootstrap5-3.bundle.min.js"></script>
+
+
+
+
+</html>
